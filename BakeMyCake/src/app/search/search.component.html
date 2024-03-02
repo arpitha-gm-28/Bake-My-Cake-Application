@@ -1,0 +1,13 @@
+<div class="search">
+    <mat-form-field  appearance="fill" id="search" color="warn">
+      <!-- <mat-label>Search Items</mat-label> -->
+      <div class="div">
+      <mat-icon color="accent">search</mat-icon>
+      <input type="text" [(ngModel)]="searchText" matInput (keyup)="search()" placeholder="Search by item name" />
+      </div>   
+    </mat-form-field>
+    <!-- <button mat-mini-fab (click)="search()">
+      <mat-icon>search</mat-icon>
+    </button> -->
+  </div>
+

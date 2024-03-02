@@ -1,0 +1,47 @@
+/* 
+mat-form-field {
+    position:sticky;
+    top:10;
+    width: 100%; 
+    z-index:1;
+  }
+  
+
+  mat-form-field label {
+    font-weight: bold; 
+    color: #333; 
+  }
+
+  mat-select {
+    width: 100%; 
+  }
+
+  mat-option {
+    color: #333;
+  }
+  
+
+  .mat-selected {
+    background-color: #2196F3; 
+    color: #fff; 
+  }
+  
+  mat-select.focused {
+    border-color: #2196F3;
+  }
+   */
+
+.chip{
+  position:fixed;
+  right:0;
+  top:19%;
+  z-index:6;
+}  
+
+@media (max-width: 1510px) {
+  .chip {
+    font-size: 12px; 
+    position:fixed;
+    top:25%;
+  }
+}  

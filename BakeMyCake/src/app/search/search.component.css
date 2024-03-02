@@ -1,0 +1,30 @@
+.search {
+    position:fixed;
+    top:3%;
+    left:2%;
+    /* top:10px;
+    left:40%; */
+    z-index:4;
+  }
+
+  .search-width {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  #search {
+    width: 250px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 700px) {
+    #search {
+      font-size: 12px; 
+      width: 170px;
+    }
+  }  
+
+  .div{
+    display:flex;
+    justify-content: left;
+  }

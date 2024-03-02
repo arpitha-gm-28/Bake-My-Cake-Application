@@ -1,0 +1,40 @@
+<!-- <label for="sortCriteria">Sort by:</label>
+<select id="sortCriteria" (change)="onSortChange($event)">
+  <option value="All">All</option>
+  <option value="Cake">Cake</option>
+  <option value="Brownie">Brownie</option>
+  <option value="Cookie">Cookie</option>
+  <option value="rating">Rating</option>
+  <option value="price">Price</option>
+</select> -->
+
+
+<!-- <mat-chip-listbox (click)="onSortChange($event)">
+  <mat-chip-option [value]="'All'">All</mat-chip-option>
+  <mat-chip-option [value]="'Cake'">Cake</mat-chip-option>
+  <mat-chip-option [value]="'Brownie'">Brownie</mat-chip-option>
+  <mat-chip-option [value]="'Cookie'">Cookie</mat-chip-option>
+  <mat-chip-option [value]="'rating'">Rating</mat-chip-option>
+  <mat-chip-option [value]="'price'">Price</mat-chip-option>
+</mat-chip-listbox> -->
+
+<!-- <mat-form-field>
+    <label for="sortCriteria">Category</label>
+    <mat-select id="sortCriteria" (selectionChange)="onSortChange($event)">
+      <mat-option value="All">All</mat-option>
+      <mat-option value="Cake">Cake</mat-option>
+      <mat-option value="Brownie">Brownie</mat-option>
+      <mat-option value="Cookie">Cookie</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+  <mat-chip-listbox [(ngModel)]="selectedCategory" (ngModelChange)="onCategoryChange()" class="chip">
+    <mat-chip-option style="background-color: #9b0b64;" value="" selected color="accent">All</mat-chip-option>
+    <mat-chip-option style="background-color: #99005e;" *ngFor="let category of categories" [value]="category" color="accent">{{ category }}</mat-chip-option>
+  </mat-chip-listbox>
+
+
+  
+  
+
+

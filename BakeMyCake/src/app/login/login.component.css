@@ -1,0 +1,120 @@
+/* .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+
+  margin-top:140px;
+
+  }
+
+.form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 15px;
+}
+
+.password{
+  width:210px;
+}
+
+.navi:hover {
+  transform: scale(1.09);
+  color: #9b0b64;   
+}
+ */
+
+ .login-container {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top:30%;
+}
+
+.login-card {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  /* background-color: #fff; */
+  background-color: rgba(255, 226, 242, 0.8); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-section {
+  flex: 2;
+  padding: 24px;
+}
+
+h2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.0rem;
+  margin: 10px 0;
+  color: #666;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.password {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  margin-top:-30px;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  color: #666;
+  cursor: pointer;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.signup{
+  display:flex;
+  justify-content: center;
+}
+
+/* mat-icon {
+  font-size: 2rem;
+  margin: 0 8px;
+  color: #007bff;
+} */
+
+/* .navi {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+} */

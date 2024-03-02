@@ -1,0 +1,48 @@
+.item{
+    margin-top:12%;
+}
+
+
+.mat-select {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .mat-select-label {
+    color: #333;
+  }
+  
+
+  .mat-option {
+    padding: 8px 16px;
+  }
+  
+
+  .mat-option.mat-selected {
+    background-color: #f0f0f0;
+  }
+  
+
+  .mat-select-arrow {
+    fill: #333;
+  }
+
+  .result{
+    font-size: 20px;
+    color: #9b0b64; 
+    text-align:center;
+    margin-top:400px;
+  }
+
+  p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9rem; 
+    text-align: center;
+    color: #9b0b64; 
+    margin-top: 20px; 
+  }
+  

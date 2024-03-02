@@ -1,0 +1,29 @@
+.bb{
+    margin-left:50px;
+    margin-top:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+  }
+
+  #notfound{
+    font-weight: 200;
+    font-size: 200px;
+  }
+  
+  #nothing{
+    font-size: 50px;
+  }
+  /* img{
+      width:50%;
+     margin-left:50px;
+     margin-top:50px;
+  } */
+
+  @media (max-width: 700px) {
+     .nothing {
+      font-size: 12px; 
+      width: 170px;
+    }
+  } 

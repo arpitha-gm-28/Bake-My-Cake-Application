@@ -1,0 +1,67 @@
+<app-search (searchEvent)="onSearch($event)"></app-search>
+
+<div class="item"></div>
+<app-chips (categoryChanged)="onCategoryChanged($event)"></app-chips>
+
+<p>Our Exclusive Cakes</p>
+
+<div class="result" *ngIf="noResultsMessage">{{ noResultsMessage }}</div>
+
+<app-item *ngFor="let item of items" [item]="item"></app-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <label for="sortCriteria">Sort By</label>
+    <mat-select [(ngModel)]="sortingCriteria" (ngModelChange)="onSort()">
+      <mat-option value="default">Default</mat-option>
+      <mat-option value="rating">Rating</mat-option>
+      <mat-option value="price">Price</mat-option>
+    </mat-select>
+  </div>
+<div class="chip"> -->

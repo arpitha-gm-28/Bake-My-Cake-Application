@@ -1,0 +1,379 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "itemName": "Berries Summer Cupcakes",
+      "type": "Cake",
+      "rating": 3,
+      "price": 550,
+      "image": "Berries Summer Cupcakes.jpg"
+    },
+    {
+      "id": "2",
+      "itemName": "Brownies different flavour",
+      "type": "Brownie",
+      "rating": 4,
+      "price": 250,
+      "image": "Brownies Different Flavor.jpg"
+    },
+    {
+      "id": "3",
+      "itemName": "Butter cookies",
+      "type": "Cookie",
+      "rating": 3,
+      "price": 550,
+      "image": "Butter Cookies.jpg"
+    },
+    {
+      "id": "4",
+      "itemName": "Cherry Jelly Cheesecake",
+      "type": "Cake",
+      "rating": 3,
+      "price": 550,
+      "image": "Cherry Jelly Cheesecake.jpg"
+    },
+    {
+      "id": "5",
+      "itemName": "Chocolate Blueberries Cake",
+      "type": "Cake",
+      "rating": 2,
+      "price": 150,
+      "image": "Chocolate Blueberries Cake.jpg"
+    },
+    {
+      "id": "6",
+      "itemName": "Chocolate Bonbons",
+      "type": "Brownie",
+      "rating": 2,
+      "price": 150,
+      "image": "Chocolate Bonbons.jpg"
+    },
+    {
+      "id": "7",
+      "itemName": "Chocolate Cookies",
+      "type": "Cookie",
+      "rating": 2,
+      "price": 150,
+      "image": "Chocolate Cookies.jpg"
+    },
+    {
+      "id": "8",
+      "itemName": "Chocolate Cupcake",
+      "type": "Cake",
+      "rating": 5,
+      "price": 50,
+      "image": "Chocolate Cupcake.jpg"
+    },
+    {
+      "id": "9",
+      "itemName": "Chocolate Summer Berries",
+      "type": "Cake",
+      "rating": 5,
+      "price": 350,
+      "image": "Chocolate Summer Berries.jpg"
+    },
+    {
+      "id": "10",
+      "itemName": "Classic Cheesecake",
+      "type": "Cake",
+      "rating": 5,
+      "price": 150,
+      "image": "Classic Cheesecake.jpg"
+    },
+    {
+      "id": "11",
+      "itemName": "Cookies Creamcake",
+      "type": "Cookie",
+      "rating": 4,
+      "price": 180,
+      "image": "Cookies Cream Cake.jpg"
+    },
+    {
+      "id": "12",
+      "itemName": "Easter Cupcakes",
+      "type": "Cake",
+      "rating": 5,
+      "price": 150,
+      "image": "Easter Cupcakes.jpg"
+    },
+    {
+      "id": "13",
+      "itemName": "Fruit Cake",
+      "type": "Cake",
+      "rating": 5,
+      "price": 150,
+      "image": "Fruit Cake.jpg"
+    },
+    {
+      "id": "14",
+      "itemName": "Isometric Chocolate brownies",
+      "type": "Brownie",
+      "rating": 5,
+      "price": 150,
+      "image": "Isometric chocolate brownies.jpg"
+    },
+    {
+      "id": "15",
+      "itemName": "Monster Theme Cake",
+      "type": "Cake",
+      "rating": 5,
+      "price": 750,
+      "image": "Monster Theme Cake.jpg"
+    },
+    {
+      "id": "16",
+      "itemName": "Muffin Devil Horns",
+      "type": "Brownie",
+      "rating": 4,
+      "price": 650,
+      "image": "Muffin Devil Horns.jpg"
+    },
+    {
+      "id": "17",
+      "itemName": "Muffin Ghost",
+      "type": "Brownie",
+      "rating": 5,
+      "price": 150,
+      "image": "Muffin Ghost.jpg"
+    },
+    {
+      "id": "18",
+      "itemName": "Pumpkin Spice Cupcakes",
+      "type": "Cake",
+      "rating": 5,
+      "price": 150,
+      "image": "Pumpkin Spice Cupcakes.jpg"
+    }
+  ],
+  "orderRequests": [
+    {
+      "id": 1,
+      "itemName": "Monster Theme Cake",
+      "price": 750,
+      "quantity": 4,
+      "total": 3000,
+      "customerName": "Arpitha G M",
+      "phone": 9483651241,
+      "address": {
+        "street": "Bangalore",
+        "zipCode": 560034
+      },
+      "email": "BB@amazon.com",
+      "processed": true
+    },
+    {
+      "id": 2,
+      "itemName": "Cherry Jelly Cheesecake",
+      "price": 550,
+      "quantity": 8,
+      "total": 5200,
+      "customerName": "Siri",
+      "phone": 7895463212,
+      "address": {
+        "street": "Maruthi Nagar",
+        "zipCode": 560047
+      },
+      "email": "BB@amazon.com",
+      "processed": true
+    },
+    {
+      "id": 3,
+      "itemName": "Cookies Creamcake",
+      "price": 180,
+      "quantity": 14,
+      "total": 2520,
+      "customerName": "Ahalya",
+      "phone": 9875641234,
+      "address": {
+        "street": "Coorg",
+        "zipCode": 560012
+      },
+      "email": "BB@amazon.com",
+      "processed": true
+    },
+    {
+      "id": 4,
+      "itemName": "Chocolate Blueberries Cake",
+      "price": 150,
+      "quantity": 3,
+      "total": 450,
+      "customerName": "Arpitha G M",
+      "phone": 8654793212,
+      "address": {
+        "street": "Kodagu",
+        "zipCode": 560013
+      },
+      "email": "BB@amazon.com",
+      "processed": false
+    },
+    {
+      "id": 5,
+      "itemName": "Muffin Devil Horns",
+      "price": 650,
+      "quantity": 44,
+      "total": 28600,
+      "customerName": "Shashikala",
+      "phone": 9874563215,
+      "address": {
+        "street": "Austin Town",
+        "zipCode": 560047
+      },
+      "email": "BB@amazon.com",
+      "processed": false
+    },
+    {
+      "id": 6,
+      "itemName": "Fruit Cake",
+      "price": 150,
+      "quantity": 4,
+      "total": 600,
+      "customerName": "Ahalya",
+      "phone": 7894563212,
+      "address": {
+        "street": "Mysore",
+        "zipCode": 856232
+      },
+      "email": "ahalya@gmail.com",
+      "processed": false
+    },
+    {
+      "id": 7,
+      "itemName": "Brownies different flavour",
+      "price": 250,
+      "quantity": 5,
+      "total": 1250,
+      "customerName": "Arpitha G M",
+      "phone": 9845633213,
+      "address": {
+        "street": "Brigade Road",
+        "zipCode": 568788
+      },
+      "email": "siri85@gmail.com",
+      "processed": false
+    },
+    {
+      "id": 8,
+      "itemName": "Berries Summer Cupcakes",
+      "price": 550,
+      "quantity": 4,
+      "total": 2200,
+      "customerName": "Arpitha G M",
+      "phone": 9874554123,
+      "address": {
+        "street": "Bangalore",
+        "zipCode": 560034
+      },
+      "email": "BB@amazon.com",
+      "processed": true
+    },
+    {
+      "id": 9,
+      "itemName": "Classic Cheesecake",
+      "price": 150,
+      "quantity": 4,
+      "total": 600,
+      "customerName": "Zang",
+      "phone": 7254444444,
+      "address": {
+        "street": "Mangalore",
+        "zipCode": 560042
+      },
+      "email": "cakes44@amazon.com",
+      "processed": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Admin",
+      "email": "admin@gmail.com",
+      "password": "Swordfish$1",
+      "role": "administrator"
+    },
+    {
+      "id": 2,
+      "username": "Arpitha G M",
+      "email": "BB@amazon.com",
+      "role": "user",
+      "password": "Swordfish$1",
+      "confirmPassword": "Swordfish$1",
+      "gender": "Female",
+      "age": 19,
+      "phone": 7894561311,
+      "address": {
+        "street": "Koramangala",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": 560034
+      }
+    },
+    {
+      "id": 3,
+      "username": "Ahalya",
+      "email": "ahalya@gmail.com",
+      "role": "user",
+      "password": "Swordfish$1",
+      "confirmPassword": "Swordfish$1",
+      "gender": "Female",
+      "age": 18,
+      "phone": 9874563215,
+      "address": {
+        "street": "Jayanagar",
+        "city": "Mysore",
+        "state": "Karnataka",
+        "zipCode": 560564
+      }
+    },
+    {
+      "id": 4,
+      "username": "Siri A R",
+      "email": "siri85@gmail.com",
+      "role": "user",
+      "password": "Swordfish$1",
+      "confirmPassword": "Swordfish$1",
+      "gender": "Male",
+      "age": 22,
+      "phone": 9874563321,
+      "address": {
+        "street": "Madivala",
+        "city": "Bangalore South",
+        "state": "Karnataka",
+        "zipCode": 560034
+      }
+    },
+    {
+      "id": 5,
+      "username": "Akarsh G M",
+      "email": "akarsh@gmail.com",
+      "role": "user",
+      "password": "Swordfish$1",
+      "confirmPassword": "Swordfish$1",
+      "gender": "Male",
+      "age": 18,
+      "phone": 7895643121,
+      "address": {
+        "street": "Austin town",
+        "city": "blr",
+        "state": "karnataka",
+        "zipCode": 56356
+      }
+    },
+    {
+      "id": 6,
+      "username": "Zang",
+      "email": "cakes44@amazon.com",
+      "role": "user",
+      "password": "Swordfish$1",
+      "confirmPassword": "Swordfish$1",
+      "gender": "Female",
+      "age": 23,
+      "phone": 7543632231,
+      "address": {
+        "street": "Victoria layout",
+        "city": "Mangalore",
+        "state": "Karnataka",
+        "zipCode": 55156
+      }
+    }
+  ]
+}

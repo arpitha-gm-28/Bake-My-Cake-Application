@@ -1,0 +1,113 @@
+<!-- <mat-table [dataSource]="cakeRequests" class="mat-elevation-z8">
+    <ng-container *ngFor="let column of displayedColumns; let i = index" [matColumnDef]="column">
+      <mat-header-cell *matHeaderCellDef>{{ column }}</mat-header-cell>
+      <mat-cell *matCellDef="let order">{{ getOrderValue(order, column) }}</mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+   -->
+
+   <!-- <mat-carousel>
+    <ng-container *ngFor="let order of cakeRequests">
+      <mat-carousel-slide>
+        <img [src]="order.image" alt="Order Image">
+        <h3>{{ order.customerName }}</h3>
+        <p>{{ order.itemName }}</p>
+        <p>Price: {{ order.price }}</p>
+      </mat-carousel-slide>
+    </ng-container>
+  </mat-carousel> -->
+ 
+  <!-- <mat-carousel [timings]="5000">
+    <ng-container *ngFor="let order of cakeRequests">
+      <mat-carousel-slide class="card">
+        <mat-card class="mat-elevation-z4" style="width: 400px; height:400px;">
+          <mat-card-content>
+            <h3>{{ order.customerName }}</h3>
+            <p>Email: {{ order.email }}</p>
+            <p>Phone: {{ order.phone }}</p>
+            <p>Item: {{ order.itemName }}</p>
+            <p>Price: {{ order.price | currency }}</p>
+            <p>Quantity: {{ order.quantity }}</p>
+            <p>Total: {{ order.total | currency }}</p>
+            <p>Address: {{ order.address.street }}, {{ order.address.zipCode }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" (click)="processOrder(order)" [disabled]="order.processed">
+              {{ order.processed ? 'Processed...' : 'Ordered' }}
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-carousel-slide>
+    </ng-container>
+  </mat-carousel> -->
+
+  <div class="admin-heading">
+    <h1>AdminSphere: Your Universe of Control</h1>
+    <p>Welcome to the central hub where you have the power to manage it all.</p>
+  </div>
+  
+  <div class="container">
+  <mat-table [dataSource]="cakeRequests" class="mat-elevation-z8">
+    <ng-container matColumnDef="customerName">
+      <mat-header-cell *matHeaderCellDef> Customer Name </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.customerName }} </mat-cell>
+    </ng-container>
+    
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.email }} </mat-cell>
+    </ng-container>
+    
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.phone }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="itemName">
+      <mat-header-cell *matHeaderCellDef> Item Name </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.itemName }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.price | currency: 'INR' }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="quantity">
+      <mat-header-cell *matHeaderCellDef> Quantity </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.quantity }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="total">
+      <mat-header-cell *matHeaderCellDef> Total </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.total | currency: 'INR' }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="address">
+      <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
+      <mat-cell *matCellDef="let order"> {{ order.address.street }}, {{ order.address.zipCode }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="action">
+      <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+      <mat-cell *matCellDef="let order">
+        <button mat-button color="primary" (click)="processOrder(order)" [disabled]="order.processed">
+          {{ order.processed ? 'Processed...' : 'Ordered' }}
+        </button>
+      </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns" class="table-row"></mat-row>
+  </mat-table>
+  </div>
+  
+  
+
+
+
+
+  

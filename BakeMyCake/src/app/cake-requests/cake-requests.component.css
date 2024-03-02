@@ -1,0 +1,146 @@
+/* 
+mat-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2000px;
+    margin-right: 200px;
+    margin-top:15%;
+  }
+  
+
+  mat-carousel-slide {
+    width: 400px !important;
+    height: 300px !important; 
+    margin: 0 16px; 
+  }
+  
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  mat-card-content {
+    padding: 16px;
+    text-align: left;
+  }
+  
+
+  mat-card-actions button {
+    margin-left: auto;
+  }
+  
+ p {
+    margin: 0;
+    font-size: 15px;
+    color: #56364a;
+  }
+  
+
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #b2cfef;
+  }
+  
+  h3{
+    color: #9b0b64;
+  } */
+
+  /* .mat-table {
+    width: 100%;
+  }
+  
+  .mat-row:hover {
+    background-color: #f2f2f2;
+  }
+  */
+
+  .admin-heading {
+    text-align: center;
+    background-color: #ffffff;
+    color: #9b0b64;
+    padding-top: 15px;
+    margin-top:6.5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .admin-heading h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9rem;
+    margin: 0;
+  }
+  
+  .admin-heading p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+
+.container{
+  width:1400px;
+  margin-left:60px;
+  margin-top:2%;
+  padding-bottom:40px;
+}
+
+  .mat-table {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .mat-header-cell {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .mat-cell {
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+  }
+  
+  .table-row {
+    transition: background-color 0.2s;
+  }
+  
+  .table-row:hover {
+    background-color: #e5f5ff;
+  }
+  
+  button {
+    background-color: #4da2fd;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #a0cbf8;
+  }
+  

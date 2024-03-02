@@ -1,0 +1,35 @@
+
+<div class="mat-card-container">
+  <div class="mat-card">
+    <img class="card-img" mat-card-image [src]="'assets/' + item?.image" alt="{{ item?.itemName }}" />
+    <mat-card-title>{{ item?.itemName }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ item?.price | currency: 'INR' }}</p>
+      <p id="para" [ngClass]="getRatingClass(item?.rating)" mat-mini-fab>{{ item?.rating }}</p>
+      <ng-container *ngFor="let _ of [].constructor(item?.rating); let i = index">
+        <img class="image" mat-card-image src="assets/rating.jpg" [alt]="'Rating: ' + (i + 1)" >
+      </ng-container>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon color="warn">favorite</mat-icon>
+      </button>
+      <button mat-button (click)="goToOrderView()" matTooltip="add to cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </mat-card-actions>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- routerLink="order/{{item.id}}" -->

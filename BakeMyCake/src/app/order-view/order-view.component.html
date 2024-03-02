@@ -1,0 +1,111 @@
+<div class="background-image">
+
+<div class="mat-card-container">
+    <div class="mat-card">
+        <img class="card-img" mat-card-image [src]="'assets/' + item?.image">
+     <mat-card-title class="title">{{item?.itemName}}</mat-card-title>
+        <mat-card-content>
+        <p>{{ item?.price | currency: 'INR' }}</p>
+        <p id="para">{{ item?.rating }}</p>
+      <ng-container *ngFor="let _ of [].constructor(item?.rating); let i = index">
+        <img class="image" mat-card-image src="assets/rating.jpg" [alt]="'Rating: ' + (i + 1)">
+      </ng-container>
+     </mat-card-content>
+     <mat-card-actions class="actions">
+        <button mat-button>
+          <mat-icon color="warn" >favorite</mat-icon>
+        </button>
+        <button mat-button (click)="addToCart()" matTooltip="add to cart">
+          <mat-icon>add</mat-icon>
+        </button>
+        <button mat-button (click)="removeFromCart()" matTooltip="remove">
+            <mat-icon color="warn">remove</mat-icon>
+          </button>
+      </mat-card-actions>
+      <div class="cart-info">
+        <p>Quantity : {{ Quantity }}</p>
+        <p>Total Price : {{ totalPrice | currency: 'INR' }}</p>
+      </div>
+ </div>
+</div>
+
+
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="border">
+ 
+  <h2>Order Details</h2>
+  
+  <div>
+  <mat-form-field appearance="outline" class="one">
+    <mat-label>Item Name</mat-label>
+    <input matInput formControlName="itemName" type="text" [(ngModel)]="item.itemName" readonly>
+  </mat-form-field>
+  </div>
+
+  <div class="two">
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price" type="number" [(ngModel)]="item.price" readonly>
+  </mat-form-field>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Quantity</mat-label>
+    <input matInput formControlName="quantity" type="number" [(ngModel)]="Quantity" readonly>
+  </mat-form-field>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Total</mat-label>
+    <input matInput formControlName="total" type="number" [(ngModel)]="totalPrice" readonly>
+  </mat-form-field>
+</div>
+
+  <section>
+  <mat-form-field appearance="outline" class="three">
+    <mat-label>Customer Name</mat-label>
+      <input  matInput placeholder="Customer Name" formControlName="customerName" type="text">
+      <mat-error *ngIf="customerName?.errors?.['required']">​First Name is required​</mat-error>
+      <mat-error *ngIf="customerName?.errors?.['minlength']">​First Name Minimum Length is {{customerName?.errors?.['minlength']?.requiredLength}}</mat-error>​
+    </mat-form-field>
+    </section>
+
+    <div class="four">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Email">
+      <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>
+      <mat-error *ngIf="email?.errors?.['invalidGuestEmails']">Enter valid email address</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+        <input  matInput placeholder="Phone Number" formControlName="phone" type="number" required>
+        <mat-error *ngIf="phone?.errors?.['required']">Phone number is required</mat-error>
+        <mat-error *ngIf="phone?.errors?.['pattern']">Valid phone number contains 10 digits starting with 7/8/9​</mat-error>
+    </mat-form-field>
+    </div>
+
+    <section formGroupName="address">
+    <mat-hint>Address</mat-hint>
+
+    <div class="five">
+    <mat-form-field appearance="outline">
+      <mat-label>Street</mat-label>
+        <input  matInput placeholder="Street" formControlName="street" type="text" required>
+        <mat-error *ngIf="street?.errors?.['required']">Street is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Zip Code</mat-label>
+        <input  matInput placeholder="Zip Code" formControlName="zipCode" type="number" required>
+        <mat-error *ngIf="zipCode?.errors?.['required']">Zipcode is required</mat-error>
+        <mat-error *ngIf="zipCode?.errors?.['pattern']">Zip code should be 5-digit or 6-digit number​</mat-error>
+    </mat-form-field>
+    </div>
+  </section>
+  
+ <div class="button">
+  <button color="accent" class="reset" mat-raised-button type="button" (click)="resetSpecificFields()">Reset</button>
+  <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid" >Place Order</button>
+ </div>
+</form>
+</div>

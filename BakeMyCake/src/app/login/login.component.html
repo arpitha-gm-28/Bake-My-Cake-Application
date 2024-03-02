@@ -1,0 +1,100 @@
+  <!-- <form [formGroup]="loginForm" (ngSubmit)="login()" class="container">
+ 
+    <h2>Login</h2>
+    <section>
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Username</mat-label>
+        <input  matInput placeholder="Username" formControlName="username" type="text">
+        <mat-error *ngIf="username?.errors?.['required']">Username is required​</mat-error>
+        <mat-error *ngIf="username?.errors?.['minlength']">Username Minimum Length is {{username?.errors?.['minlength']?.requiredLength}}</mat-error>​
+      </mat-form-field>
+      </section>
+
+      <div>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Email">
+        <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>
+        <mat-error *ngIf="email?.errors?.['invalidGuestEmails']">Enter valid email address</mat-error>
+      </mat-form-field>
+      </div>
+
+      <div>
+      <mat-form-field appearance="fill" class="password">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" [type]="hidePassword ? 'password' : 'text'" placeholder="Password">
+        <mat-error *ngIf="password?.errors?.['required']">​Password is required​</mat-error>
+        <mat-error *ngIf="password?.errors?.['minlength']">​Password should have min {{password?.errors?.['minlength']?.requiredLength}} letters &</mat-error>​
+        <button type="button" mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+        <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      </div>
+    
+   <div class="button">
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+   </div>
+
+   <a mat-icon-button routerLink="/sign-up" class="navi">
+    <mat-icon>how_to_reg</mat-icon>
+  </a>
+  <p>Sign Up!</p>
+  </form>
+   -->
+
+
+   <div class="login-container">
+    <mat-card class="login-card">
+      <div class="left-section">
+        <img src="assets/Cherry Jelly Cheesecake.jpg" alt="Bake My Cake Logo">
+      </div>
+      <div class="right-section">
+        <h2>Delicious Cake For Everyone</h2>
+        <p>Welcome to Bake My Cake</p>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Email">
+            <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>
+            <mat-error *ngIf="email?.errors?.['invalidGuestEmails']">Enter a valid email address</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="password">
+            <mat-label>Password</mat-label>
+            <input matInput  formControlName="password" [type]="hidePassword ? 'password' : 'text'" placeholder="Password">
+            <mat-error *ngIf="password?.errors?.['required']">Password is required</mat-error>
+            <mat-error *ngIf="password?.errors?.['minlength']">Password should have at least {{password?.errors?.['minlength']?.requiredLength}} characters</mat-error>
+            <button type="button" mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+     
+          <p class="forgot-password">Forgot your password?</p>
+          <div class="button">
+            <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+          </div>
+        </form>
+
+        
+        <div class="signup">
+          <p>Don't have an account?</p>
+          <a mat-button color="accent" routerLink="/sign-up">
+            Sign Up
+          </a>
+        </div>
+        <!-- <div class="signup">
+        <a mat-icon-button routerLink="/sign-up">
+          <mat-icon>how_to_reg</mat-icon>
+        </a>
+        <p class="para">Sign Up!</p>
+        </div> -->
+        <!-- <div class="social-media-icons">
+          <mat-icon aria-hidden="false">facebook</mat-icon>
+          <mat-icon aria-hidden="false">twitter</mat-icon>
+          <mat-icon aria-hidden="false">instagram</mat-icon>
+        </div> -->
+      </div>
+    </mat-card>
+  </div>
+
+  
+  
